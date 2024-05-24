@@ -1,0 +1,343 @@
+body,
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero_section {
+    text-align: center;
+}
+
+.nav_bar .bg-primary {
+    background-color: rgb(35, 35, 35) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nav_bar .navbar .navbar-collapse li {
+    font-weight: 600;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.nav_bar .navbar .navbar-collapse li:hover {
+    background: rgb(184, 175, 166);
+    transition: 0.55s;
+}
+
+.nav_bar .navbar {
+    position: fixed;
+    z-index: 10000 !important;
+    width: 100%;
+}
+
+.hero_section .nav_bar {
+    position: relative;
+    min-height: 700px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+    background-position: center center !important;
+}
+
+.nav_bar-mask:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.nav_bar-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.photo {
+    position: relative;
+    width: auto;
+    height: 240px;
+    text-align: center;
+    top: 45px;
+}
+
+.photo img {
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    z-index: 10;
+}
+
+.nav_bar .name {
+    color: white;
+}
+
+.nav_bar .self-intro {
+    color: white;
+    font-size: smaller;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 500 !important;
+    color: #000;
+}
+
+.card {
+    border: 0;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: -1px 5px 25px 0px rgb(0 0 0 / 20%);
+    box-shadow: -1px 5px 25px 0px rgb(0 0 0 / 20%);
+    background-color: antiquewhite;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    border-radius: 1%;
+    text-align: left;
+}
+
+.about .card:hover,
+.skill .card:hover,
+.ex-section .card:hover,
+.project .card:hover {
+    transform: scale(1.02, 1.02) !important;
+}
+
+.skill .card {
+    background-color: antiquewhite;
+    color: #D5D6E2;
+}
+
+.skill_bar .bar {
+    background: white;
+    height: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.skill_bar .skill_bar_title {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    top: -28px !important;
+}
+
+.skill_bar .skill_num {
+    float: right !important;
+}
+
+.skill_bar .skill-bar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+
+
+.project {
+    margin-top: 30px;
+    padding-top: 50px;
+    text-align: center !important;
+    background-attachment: relative !important;
+    background-position: center center !important;
+    height: 500px;
+    position: relative !important;
+}
+
+.project .title {
+    margin-top: -60px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 50px;
+}
+
+.project .row {
+    bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+.gallery .project-main {
+    transition: 0.5s;
+
+}
+
+.gallery .project-main:hover {
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+}
+
+.gallery .porfolio-image figure {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery .porfolio-image figure img {
+    position: relative;
+    display: block;
+    min-width: 375px;
+    width: 100%;
+    height: 250px;
+    opacity: 1;
+}
+
+.gallery .porfolio-image figure figcaption {
+    position: absolute;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.gallery .porfolio-image figure figcaption,
+.gallery .porfolio-image figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .porfolio-image figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.gallery .porfolio-image figure .h4,
+.gallery .porfolio-image figure p {
+    margin: 0;
+}
+
+.gallery figure.project-main figcaption::before,
+.gallery figure.project-main figcaption::after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+.gallery figure.project-main figcaption::before {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.gallery figure.project-main figcaption::after {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.gallery figure.project-main .h4 {
+    margin-top: 80px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+    opacity: 0;
+}
+
+.gallery figcaption .container {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.gallery figure.project-main p {
+    padding: 0.5em 2em;
+    letter-spacing: 1px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+    opacity: 0;
+}
+
+.gallery figure.project-main img,
+.gallery figure.project-main .h4 {
+    -webkit-transform: scale(1.06, 1.06);
+    transform: scale(1.06, 1.06);
+}
+
+.gallery figure.project-main img,
+.gallery figure.project-main figcaption::before,
+.gallery figure.project-main figcaption::after,
+.gallery figure.project-main p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.gallery figure.project-main:hover img {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.gallery figure.project-main:hover figcaption::before,
+.gallery figure.project-main:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.gallery figure.project-main:hover figcaption:before {
+    background: rgba(27, 23, 23, 0.5);
+}
+
+.gallery figure.project-main:hover .h4,
+.gallery figure.project-main:hover p,
+.gallery figure.project-main:hover button {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color: #fff;
+}
+
+.ex-section .card {
+    background-color:antiquewhite;
+    color: black;
+
+}
+
+
+.ex-section .work {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.contact .card {
+    background-color:antiquewhite;
+}
+
+
+
